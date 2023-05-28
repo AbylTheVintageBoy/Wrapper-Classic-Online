@@ -1321,7 +1321,29 @@ _qoptions={"qacct":"p-66CFnJxwubvnE"};
 
 
 </script>
+<script>
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 
+function checkCookie() {
+  let key = getCookie("key");
+  if (key == "") {
+location.replace("./closed");
+  }
+}
+</script>
 
 
 <div style="position: absolute; left: -10px; visibility: hidden;"><object type="application/x-shockwave-flash" id="_kmfc" data="./Wrapper Classic - The Golden Days of Goanimate_files/fs.swf.download" width="1" height="1"><param name="movie" value="https://web.archive.org/web/20110530020219/http://doug1izaerwt3.cloudfront.net/fs.swf"><param name="allowScriptAccess" value="always"><param name="FlashVars" value="k=c5eda915a49e275384d3c74839d61b5584741010"></object></div><div id="mulberry-extension" style="display: block; position: fixed; top: 10px; right: 10px; z-index: 2147483647; visibility: visible;"></div><script type="text/javascript" src="chrome-extension://doheogeolmnlejjfpdfldnnicofckndc/web_accessible_resources.js"></script><div id="growlfeedback_block" class="growlUI" style="display: none;">
