@@ -1,0 +1,22 @@
+<html>
+  <body>
+  <script>
+  		const params = new URLSearchParams(window.location.search);
+    if (params.get("password" != "k0bgb7dAvid3sc0Bar&bYL")
+        {
+        location.replace("./closed");
+        }
+        else
+        {
+        setCookie("key", "k0bgb7dAvid3sc0Bar&bYL", 365);  
+        location.replace("./");        
+        }
+    function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+  </script>
+  </body>
+</html>
